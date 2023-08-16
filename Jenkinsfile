@@ -17,7 +17,8 @@ pipeline {
         }
         stage('Compile and Run Sonar Analysis') {
             steps {
-                sh mvn clean verify sonar:sonar \
+                sh mvn clean verify sonar:sonar 
+            }
             -Dsonar.projectKey=Spring-Waseem \
             -Dsonar.projectName='Spring-Waseem' \
             -Dsonar.host.url=http://18.136.72.199:9000 \
