@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/waseemshaik1993/spring-hello-app'
+                git 'https://github.com/babu517/spring-hello-app'
             }
         }
         stage('Build') {
