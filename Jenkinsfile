@@ -19,8 +19,8 @@ pipeline {
             steps {
                 sh 'mvn clean verify sonar:sonar' 
             }
-            -Dsonar.projectKey=Spring-Waseem \
-            -Dsonar.projectName='Spring-Waseem' \
+            -Dsonar.projectKey=spring-hello-app \
+            -Dsonar.projectName='spring-harish' \
             -Dsonar.host.url=http://18.136.72.199:9000 \
             -Dsonar.login=${Sonar-Creds}
             -Dsonar.token=sqp_0c985d7c5d47e41960e40f0ccf04723d2b1446be
