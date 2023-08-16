@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Compile and Run Sonar Analysis') {
             steps {
-                sh mvn clean verify sonar:sonar 
+                sh 'mvn clean verify sonar:sonar' 
             }
             -Dsonar.projectKey=Spring-Waseem \
             -Dsonar.projectName='Spring-Waseem' \
